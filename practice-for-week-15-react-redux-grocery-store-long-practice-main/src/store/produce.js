@@ -15,7 +15,7 @@ export default function produceReducer(state = {}, action) {
 
   const POPULATE = "produce/POPULATE";
 
-function populateProduce(){
+export function populateProduce(){
     return({
         type: POPULATE,
         produce: produceData
