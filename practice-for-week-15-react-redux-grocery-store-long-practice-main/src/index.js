@@ -18,6 +18,10 @@ function Root() {
   );
 }
 
+if (process.env.NODE_ENV !== "production") {
+  window.store = store;
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <Root />
